@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2005
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoinGroup.CryptoCollector.Console", "CoinGroup.CryptoCollector.Console\CoinGroup.CryptoCollector.Console.csproj", "{9EBC2F34-5178-4F91-A9AA-A64ECFF55D17}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoinGroup.CryptoCollector.Core", "CoinGroup.CryptoCollector.Core\CoinGroup.CryptoCollector.Core.csproj", "{F6792264-C02C-4715-932D-B3191DC8451C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoinGroup.CryptoCollector.Bitfinex", "CoinGroup.CryptoCollector.Bitfinex\CoinGroup.CryptoCollector.Bitfinex.csproj", "{E95AAE73-AB83-4394-A127-ACAC9F288FAA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9EBC2F34-5178-4F91-A9AA-A64ECFF55D17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EBC2F34-5178-4F91-A9AA-A64ECFF55D17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EBC2F34-5178-4F91-A9AA-A64ECFF55D17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EBC2F34-5178-4F91-A9AA-A64ECFF55D17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6792264-C02C-4715-932D-B3191DC8451C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6792264-C02C-4715-932D-B3191DC8451C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6792264-C02C-4715-932D-B3191DC8451C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6792264-C02C-4715-932D-B3191DC8451C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E95AAE73-AB83-4394-A127-ACAC9F288FAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E95AAE73-AB83-4394-A127-ACAC9F288FAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E95AAE73-AB83-4394-A127-ACAC9F288FAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E95AAE73-AB83-4394-A127-ACAC9F288FAA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {49AAC96E-57A6-424B-AF11-ACA50B5E2477}
+	EndGlobalSection
+EndGlobal

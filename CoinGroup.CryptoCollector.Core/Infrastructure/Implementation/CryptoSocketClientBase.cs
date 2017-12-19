@@ -15,6 +15,9 @@ namespace CoinGroup.CryptoCollector.Core.Infrastructure.Implementation
     public abstract class CryptoSocketClientBase : ICryptoSocketClient
     {
         private readonly ILogger _logger = LogManager.GetCurrentClassLogger();
+
+        private Task<bool> _trueCompletedTask;
+
         private ClientWebSocket _socket = new ClientWebSocket();
 
         public event EventHandler<TradeEventArgs> OnTradesReceived;
@@ -30,6 +33,11 @@ namespace CoinGroup.CryptoCollector.Core.Infrastructure.Implementation
             _logger.Debug($"Unsubscribing from {primaryCurrency}-{secondaryCurrency}");
             throw new NotImplementedException();
         }
+
+        protected virtual Task<bool> IsAuthenticated() =>
+            _trueCompletedTask ?? (_trueCompletedTask = Task.FromResult(true));
+
+        protected virtual Task Authenticate() => Task.CompletedTask;
 
         protected abstract IEnumerable<Trade> ParseTrades(string message);
 
